@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    border: none;
+}
+
+body {
+    background: #dedede;
+    width: 100%;
+}
+
+
+
+p {
+    text-indent: 2em;
+}
+/*以后这种经常改的就不要提取出来*/
+
+img {
+    margin: 10px 0;
+}
+
+#header a {
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.middle-screen {
+    width: 1200px;
+    margin: 0 auto;
+} 
+#header {
+    background: #333;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.nav {
+    height: 60px;
+    width: 1200px;
+    position: relative;
+}
+
+.nav img {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.nav ul {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+.nav ul li {
+    display: inline;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.last-li a {
+    color: #ddd;
+}
+
+.font-yahei {
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+}
+
+/*
+ *下面部分是主体部分
+*/
+.container {
+    width: 1154px;
+    padding: 30px 20px;
+    background: #fff;
+    margin-bottom: 20px;
+    border: 2px outset #ccc;
+}
+
+.container h3 {
+    color: #888;
+    font-size: 18px;
+}
+
+.container h4 {
+    color: #aaa;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.container h2 {
+    margin-bottom: 12px;
+}
+
+.container h3, h4 {
+    margin-bottom: 8px;
+}
+
+.container ul {
+    list-style-type: none;
+    text-indent: 2em;
+}
+
+.container ul li {
+    margin-bottom: 3px;
+}
+
+/*container picture部分*/
+.picture h3 {
+    font-size: 25px;
+    color: #000;
+}
+
+.picture ul {
+    margin-left: 40px;
+    list-style: none;
+}
+
+.picture img {
+    width: 120px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.picture li div {
+    width: 140px;
+    width: 140px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.picture div p {
+    text-align: center;
+    text-indent: 0;
+    height: 30px;
+    line-height: 30px;
+}
+/*container table部分*/
+.table ol {
+    margin-left: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.table ol li  {
+    margin-bottom: 5px;
+}
+
+.table p {
+    text-indent: 0;
+}
+
+.table table, tr, th, td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+.table table {
+    width: 1150px;
+}
+
+.table table thead {
+    background: #333;
+    color: #fff;
+    text-align: left;
+}
+
+.table table tfoot {
+    background: #ccc;
+}
+
+
+/*下面是sidebar部分*/
+
+aside h2 {
+    font-size: 20px;
+    font-family: "Microsoft Yahei", sans-serif;
+    border-left: 2px solid #666;
+    padding-left: 15px;
+}
+
+aside label {
+    width: 35%;
+    text-align: right;
+    padding-right: 15px;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+aside p {
+    text-indent: 0;
+    margin-left: 36%;
+    font-size: 14px;
+    color: #dedede;
+}
+
+#subs {
+    color: #fff;
+    background: #3355d0;
+    border: 1px solid #3355d0;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px 550px;
+    margin: 10px auto;
+}
+
+/*footer部分*/
+footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

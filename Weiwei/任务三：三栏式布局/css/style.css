@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#header,
+#footer {
+    height: 40px;
+    width: 100%;
+    background: #000;
+}
+
+#container {
+    background: #eee;
+    overflow: hidden;
+    border: 1px solid #999;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.main {
+    width: 100%;
+    float: left;
+}
+
+.left {
+    width: 158px;
+    padding: 20px;
+    background: #fff;
+    float: left;
+    margin-left: -100%;
+    border: 1px solid #999;
+}
+
+.right {
+    width: 120px;
+    background: #fff;
+    float: left;
+    margin-left: -122px;
+    border: 1px solid #999;
+
+}
+.main-content {
+    margin: 0 140px 0 220px;
+    background: #fff;
+    border: 1px solid #999;
+    padding: 20px;
+}
+
+.main-content p {
+    text-indent: 2em;
+    line-height: 1.6;
+}
+
+/*内容*/
+.left img {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    padding-right: 2px;
+}
+.left div {
+    float: right;
+}
+
+.right img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+}
+
+
+
+#footer {
+    clear: both;
+}

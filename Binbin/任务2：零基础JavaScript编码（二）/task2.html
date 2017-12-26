@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+<!--   
+    <li>第一名：福州（样例），10</li>
+      <li>第二名：福州（样例），10</li> -->
+  </ul>
+
+<script type="text/javascript">
+
+var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100]
+];
+var chineseChar = ["一", "二", "三", "四", "五", "六"];
+(function () {
+  /*
+  在注释下方编写代码
+  遍历读取aqiData中各个城市的数据
+  将空气质量指数大于60的城市显示到aqi-list的列表中
+  */
+  //先筛选，使用filter(),判断条件是二维数组的第二个元素值要大于60
+  var newData = aqiData.filter(function(element) {
+    return element[1] >= 60;//记得写return哦
+  });
+
+  //然后要进行排序
+  var newSort = newData.sort(function(a, b){
+    return b[1] - a[1];//记得用return哦
+  });
+
+  //然后进行遍历，将数据添加到html里面
+  var ul = document.querySelector("ul");
+  newSort.forEach(function(value, index, array){
+    var newNode = document.createElement("li");
+    newNode.innerHTML = "第" + chineseChar[index] + "名：" + value[0] + ", " + value[1];
+    ul.appendChild(newNode);
+  });
+})();
+
+</script>
+</body>
+</html>

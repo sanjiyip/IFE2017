@@ -1,0 +1,206 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*使用无衬线字体*/
+body {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+*{
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration:none;
+    display:block;
+    color:#000;
+}
+li{
+    list-style-type:none;   
+}
+.clearfloat:before,
+.clearfloat:after{
+    content:"";
+    clear:both;
+    height:0;
+    display:table;
+    visibility:hidden;
+}
+a, img {
+    -webkit-touch-callout: none; /* 禁止长按链接与图片弹出菜单 */
+}
+/* 禁止选中文本（如无文本选中需求，此为必选项） */
+html, body {
+    -webkit-user-select: none;   
+    user-select: none;
+}
+
+
+
+/*-webkit-box*/
+/*display:flex和display:-webkit-box,box,-moz-box差不多吗，前者功能比较多吧，这里我就用后者吧，还有-webkit-box在ff跟chrome都可以。。其他还没试*/
+/*09box,11flexbox,12flex,看来还是用flex吧，新*/
+
+header{
+    width:100%;
+    height:50px;
+    background:#91d4da;
+    color:#fff;
+    text-align:center;
+    line-height:50px;
+    position:relative;
+}
+.header-btn{
+    color:#fff;
+    position:absolute;
+    left:0;
+    margin-left:16px;
+}
+nav{
+    display:flex;
+    height:50px;
+    background:#fff;
+}
+nav a{
+    flex:1;
+    color:#000;
+    text-align:center;
+    line-height:50px;
+}
+nav a:hover{
+    border-bottom:2px solid #92d5db;
+}
+
+.label{
+    display:flex;
+    text-align:center;
+    margin-top:12px;
+    margin-bottom:12px;
+}
+
+.label-box{
+    flex:1;
+}
+
+.bar{
+    width:90%;
+    margin:12px auto;
+    border-bottom:1px solid #ccc;
+}
+.border-bottom-box{
+    border-bottom:20px solid #f5f5f5;   
+}
+.little-border-bottom-box{
+    border-bottom:2px solid #f5f5f5;    
+}
+.grid-box{
+    display:flex;
+    width:90%;
+    margin:0 auto;
+    text-align:center;
+    padding-bottom:10px;
+}
+.grid{
+    flex:1;
+}
+
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+section h2{
+    width:90%;
+    margin:0 auto;
+}
+
+.sec-body{
+    width:90%;
+    margin:0 auto;
+    border-top:1px solid #ebebeb;
+    padding-top:20px;
+    position:relative;
+    padding-bottom:20px;
+}
+.sec-body-l{
+    width:20%;
+    
+}
+.fix1{
+    width:30%;
+}
+#sec-body-l-img1{
+    margin-bottom:10px;
+}
+
+.sec-body-r{
+    width:80%;
+    height:100%;
+    padding-left:10px;
+    position:absolute;
+    right:0;
+    top:0;
+    overflow:hidden;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.fix2{
+    width:70%;
+}
+.sec-body-r-box{
+    display:flex;
+    width:calc(100% + 20px);
+    height:100%;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-content:space-between;
+}
+
+.sec-body-r-box a{
+    width:calc(50% - 10px);
+    height:24%;
+    display:table;/*for center*/
+    background:#f8f8f8;
+    margin-right:10px;
+    text-align:center;
+    color:#4a4a4a;  
+}
+.sec-body-r-box a p{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.sec-body-r-box-title{
+    font-size:1.375em;
+}
+
+.sec-body-r-box-source{
+    color:#c6c6c6;
+    position:absolute;
+    bottom:20px;
+    left:10px;
+}
+
+.sec-body-horizontal-box-title{
+    font-size:1.375em;
+}
+.sec-body-horizontal-box-source{
+    color:#c6c6c6;
+}
+/*让字体适应屏幕*/
+@media (max-width:400px){
+    .sec-body-r-box-title,.sec-body-horizontal-box-title{
+    font-size: 1em;
+}
+
+}
+
+.pic-flex{
+    
+}
+.pic-flex-item{
+    float:left;
+    margin-right:1px;
+}
+
+.grid-mid{
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+}

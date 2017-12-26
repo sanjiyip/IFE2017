@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .c-panel {
+            height: 50px;
+        }
+        .c-queue {
+            display: flex;
+            align-content: center;
+        }
+        .c-queue__button {
+            width: 60px;
+            height: 30px;
+            color: #ff0000;
+            margin: 0 10px;
+        }
+        .c-output {
+            height: 200px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-content: flex-end;
+            align-items: flex-end;
+        }
+        .c-output__span {
+            background: tomato;
+            width: 24px;
+            min-height: 10px;
+            text-align: center;
+            margin: 1px;
+            color: yellow;
+        }
+
+        .c-output__span--current {
+            background-color: skyblue;
+        }
+        .c-output__span--checked {
+            background-color: green;
+        }
+        .c-output__span--selected {
+            background-color: red;
+        }
+        .c-output__span--target {
+            background-color: blue;
+        }
+    </style>
+</head> 
+<body>
+    <div class="c-panel">
+        <input type="text" class="c-panel__input" placeholder="请输入数字">
+        <input type="button" value="leftIn" class="c-panel__button">
+        <input type="button" value="rightIn" class="c-panel__button">
+        <input type="button" value="leftout" class="c-panel__button">
+        <input type="button" value="rightout" class="c-panel__button">
+        <input type="button" value="sort" class="c-panel__button">
+        <input type="button" value="random" class="c-panel__button">
+        <input type="button" value="bubbleSort" class="c-panel__button">
+    </div>
+    <div class="c-output">
+        <!-- 在此处插入和删除box -->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

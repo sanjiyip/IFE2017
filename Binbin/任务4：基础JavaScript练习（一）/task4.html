@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .c-panel {
+            height: 50px;
+        }
+        .c-queue {
+            display: flex;
+            align-content: center;
+        }
+        .c-queue__button {
+            width: 60px;
+            height: 30px;
+            color: #ff0000;
+            margin: 0 10px;
+        }
+        .c-output__span {
+            display: inline-block;
+            background: tomato;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin: 10px;
+            color: yellow;
+        }
+    </style>
+</head> 
+<body>
+    <div class="c-panel">
+        <input type="text" class="c-panel__input" placeholder="请输入数字">
+        <input type="button" value="leftIn" class="c-panel__button">
+        <input type="button" value="rightIn" class="c-panel__button">
+        <input type="button" value="leftout" class="c-panel__button">
+        <input type="button" value="rightout" class="c-panel__button">
+    </div>
+    <div class="c-output">
+        <!-- 在此处插入和删除box -->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

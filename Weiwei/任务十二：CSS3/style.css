@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+}
+table {
+    margin: 0 auto;
+}
+
+thead {
+    background: #000;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+}
+
+tbody>tr:nth-child(2n+0) {
+    background: #ccc;
+}
+
+.top3 {
+    color: #f00;
+}
+.clearfix {
+    content: "";
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+/*文本框*/
+input {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    -moz-transition: width 2s;
+    -webkit-transition: width 2s;
+    -o-transition: width 2s;
+}
+
+input:focus {
+    width: 300px;
+}
+
+/*auto-loop*/
+.auto-loop {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.bg-container {
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bg {
+    width: 400px;
+    height: 300px;
+    float: left;
+    -webkit-animation-duration: 10s;
+    -moz-animation-duration: 10s;
+    -o-animation-duration: 10s;
+    -ms-animation-duration: 10s;
+    -webkit-animation-name: loop;/*动画名与@keyframes名字一致*/
+    -moz-animation-name: loop;
+    -o-animation-name: loop;
+    -ms-animation-name: loop;
+    -webkit-animation-iteration-count: infinite;/*播放次数无限次*/
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+
+}
+.green {
+    background: #0f0;
+}
+
+.red {
+    background: #f00;
+}
+
+.yellow {
+    background: #ff0;
+}
+.grey {
+    background: #ccc;
+}
+
+.loop-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.loop-button>a {
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.6);
+    animation: click 500ms linear;
+}
+.loop-button>a: {
+    animation: loop;
+}
+/* 百分比是指动画的运行时间 0表示开始，100%表示结束 */
+@keyframes loop {
+    0%{transform: translate(0, 0);}
+    25%{transform: translate(0, 0);}/*停留2000ms*/
+
+    30%{transform: translate(-100%, 0);}/*用500ms来换图*/
+    55%{transform: translate(-100%, 0);}
+
+    60%{transform: translate(-200%, 0);}
+    80%{transform: translate(-200%, 0);}
+
+    85%{transform: translate(-300%, 0);}
+    100%{transform: translate(-300%, 0);}
+}
+
+
+

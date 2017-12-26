@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*下面是sidebar部分*/
+    .middle-screen {
+        width: 1200px;
+        margin: 0 auto;
+    } 
+
+    .container {
+        width: 1154px;
+        padding: 30px 20px;
+        background: #fff;
+        margin-bottom: 20px;
+        border: 2px outset #ccc;
+    }   
+    /*用途：与上面文章拉开距离，然后设置文本样式*/
+    aside{
+        margin-top: 40px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    /*设置标题的属性*/
+    aside h3{
+        color: black;
+        padding:8px;
+        padding-left: 15px;
+        border-left: 2px solid #dedede;
+        font-size: 15px;
+    }
+    /*label为什么要用width的百分比做值呢*/
+    label{
+        width:35%;
+        /*宽度百分比是指从父类那里获取的值的百分比*/
+        float:left;
+        text-align: right;
+        padding-right: 15px;
+    }
+    aside p{
+        margin-left: 36%;
+        color:#333333;
+    }
+    textarea{
+        width: 50%;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    #sub{
+        width: 100%;
+        height: 40px;
+        background-color: #3355d0;
+        font-size: 16px;
+        color: white;
+        font-weight: bold;
+        border:none;
+        border-radius: 10px;
+    }
+    </style>
+</head>
+<body>
+        <aside>
+        <div class="container form-contain">
+            <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+            <form action="" class="c-form">
+                <label for="mail">请输入邮箱地址：</label><input type="text" name="mail" id="mail" value="这是一个文本输入框">
+                <p>邮箱地址请按要求输入</p>
+                <label for="password1">请输入密码：</label><input type="password" name="password" id="password1" value="这是一个文本输入框"><br>
+                <label for="password2">请重复输入密码：</label><input type="password" name="password" id="password2" value="这是一个文本输入框">
+                <p>密码请为6-16位英文数字</p>
+                <label>性别：</label><input type="radio" name="sex" value="male" checked>男
+                <input type="radio" name="sex" value="female"> 女 <br>
+                <label>城市：</label>
+                <select name="city">
+                    <option value="bj">北京</option>
+                    <option value="sh">上海</option>
+                    <option value="gz">广州</option>
+                </select> <br>
+                <label>爱好：</label>
+                <input type="checkbox" name="favor" value="sports">运动
+                <input type="checkbox" name="favor" value="art">艺术 
+                <input type="checkbox" name="favor" value="science">科学 <br>
+                <label>个人描述：</label>
+                <textarea name="descriptiopn" cols="3" rows="30">这是一个多行输入框，输入您的个人描述</textarea>
+                <input type="submit" name="submit" value="确认提交" id="sub">
+            </form>
+        </div>
+    </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
